@@ -11,16 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* footer style  */
+
 .footerColor {
   padding-bottom: 50px;
   padding-top: 60px;
   background-color: #f8f7f7;
 } 
 
-
+/* space between subscribe card and set of images  */
 .content5 {
   padding-bottom: 150px;
 }
+
+/* Three rounds in footer  */
+
 .roundShape {
   
     background-color:red;
@@ -31,48 +37,30 @@ code {
   
 }
 
-/* .subscribeCrazy{
-  margin-top: -40rem;
-  background-color: white;
-} */
 
-.spaceMenu {
-  justify-content: space-between;
-}
- 
-/* @media screen and (min-width:540px) and(max-width:720px) {
-  .footerColor {
-    color: red;
-  }
-} */
+/* display flex between icon and text  */
 
-@media screen and (max-width: 767px) {
-  .hideLine2,.hideLine1 {
-   display: none;
-  }
-  /* .subscribe{
-    margin-top: -60rem;
-    background-color: white;
-  } */
+.flexIconWithText {
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width:568px) {
-  
-  
-}
+ /* iPad screen  */
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-  
+   /* button subscribe  */
   .btnSub {
     margin-left: 25px;
     font-size: 10px;
     width: 100px;
     padding: 10px;
   }
+
   .btnGetSart {
     width: 40%;
     border-radius: 10px;
   }
+
   .handImg {
     width: 350px;
     margin-top: 100px;
@@ -83,9 +71,10 @@ code {
  height: 700px;
  border-radius: 20px;
 }
-/* @media screen and (min-width:375px) and (max-width:667px) {
-  
-} */
+
+
+
+/* iPhone 6/7/8 Plus  */
 
 @media screen and (min-width:414px) and (max-width:736px) {
   .bodyText {
@@ -95,12 +84,14 @@ code {
 .boxLocation {
   margin-left: 30%;
 }
+
+
+/* iPad Pro  */
 @media screen and (min-width:1024px) {
  
   .bodyText {
     margin-left: 13%;
   }
-  /* button get start  */
 
 .btnGetSart {
   width: 45%;
@@ -112,18 +103,8 @@ code {
 }
 }
 
-@media screen and (width:280px) {
-  
-  .btnSub {
-    margin-left:-63px; 
-  } 
-  .handImg {
-    width: 300px;
-  }
-  /* .footerColor {
-    width: 20rem;
-  } */
-} 
+
+/* iPhone 5 screen  */
 
 @media screen and (min-width:320px) and (max-width:568px) {
   
@@ -132,6 +113,7 @@ code {
     width: 100%;
 
   }
+  /* text of subscribe  */
   .contentSub {
     margin-left: -95px;
   }
@@ -174,6 +156,8 @@ code {
   margin-bottom: 60px;
 }
 
+
+/* Surface Duo screen  */
 @media screen and (min-width:540px) and (max-width:720px) {
   .lengIconWithText {
     margin-left: 100px;
@@ -189,6 +173,7 @@ code {
   }
 }
 
+/* location of three box pictures  */
 .boxLocation {
   width: 120px;
 }

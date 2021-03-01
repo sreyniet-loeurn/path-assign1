@@ -19,23 +19,17 @@ export const Content4 = () => {
       <Row>
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4">
           <Card className="Card">
-            <Card.Img
-              src={img3}
-              className="boxLocation"
-            />
+            <Card.Img src={img3} className="boxLocation" />
             <Card.Body>
               <Card.Title className="text-center">Free Plan</Card.Title>
               <Card.Text className="ml-5 ">
                 <p className="bodyText">
-                  {" "}
                   <DoneIcon className="text-success" /> Unlimited Bandwitch
                 </p>
                 <p className="bodyText">
-                  {" "}
                   <DoneIcon className="text-success" /> Encrypted Connection
                 </p>
                 <p className="bodyText">
-                  {" "}
                   <DoneIcon className="text-success" /> No Traffic Logs
                 </p>
                 <p className="bodyText">
@@ -46,9 +40,7 @@ export const Content4 = () => {
             <br></br>
             <Card.Body className="mt-5 text-center">
               <h3 className="mt-2">Free</h3>
-              <button
-                className="btn btn-outline-danger rounded-pill mt-1 mt-3 btnSelect"
-              >
+              <button className="btn btn-outline-danger rounded-pill mt-1 mt-3 btnSelect">
                 Seclect
               </button>
             </Card.Body>
@@ -57,10 +49,7 @@ export const Content4 = () => {
 
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4">
           <Card className="Card">
-            <Card.Img
-              src={img3}
-              className="boxLocation"
-            />
+            <Card.Img src={img3} className="boxLocation" />
             <Card.Body>
               <Card.Title className="text-center">Standard Plan</Card.Title>
               <Card.Text className="ml-5 bodyText">
@@ -84,9 +73,7 @@ export const Content4 = () => {
             <br></br>
             <Card.Body className="mt-3 text-center">
               <h3>$9 / mo</h3>
-              <button
-                className="btn btn-outline-danger rounded-pill mt-3 mb-1 btnSelect"
-              >
+              <button className="btn btn-outline-danger rounded-pill mt-3 mb-1 btnSelect">
                 Seclect
               </button>
             </Card.Body>
@@ -95,10 +82,7 @@ export const Content4 = () => {
 
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4 ">
           <Card className="border border-danger Card">
-            <Card.Img
-              src={img3}
-              className="boxLocation"
-            />
+            <Card.Img src={img3} className="boxLocation" />
             <Card.Body>
               <Card.Title className="text-center">Premium Plan</Card.Title>
               <Card.Text className="ml-5 bodyText">
@@ -124,9 +108,7 @@ export const Content4 = () => {
             </Card.Body>
             <Card.Body className="text-center">
               <h3>$12 / mo</h3>
-              <button
-                className="btn btn-danger rounded-pill mb-1 mt-3 btnSelect"
-              >
+              <button className="btn btn-danger rounded-pill mb-1 mt-3 btnSelect">
                 Seclect
               </button>
             </Card.Body>
