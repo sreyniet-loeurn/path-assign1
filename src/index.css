@@ -11,3 +11,187 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.footerColor {
+  padding-bottom: 50px;
+  padding-top: 60px;
+  background-color: #f8f7f7;
+} 
+
+
+.content5 {
+  padding-bottom: 150px;
+}
+.roundShape {
+  
+    background-color:red;
+    margin-left: 13px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  
+}
+
+/* .subscribeCrazy{
+  margin-top: -40rem;
+  background-color: white;
+} */
+
+.spaceMenu {
+  justify-content: space-between;
+}
+ 
+/* @media screen and (min-width:540px) and(max-width:720px) {
+  .footerColor {
+    color: red;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .hideLine2,.hideLine1 {
+   display: none;
+  }
+  /* .subscribe{
+    margin-top: -60rem;
+    background-color: white;
+  } */
+}
+
+@media screen and (max-width:568px) {
+  
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  
+  .btnSub {
+    margin-left: 25px;
+    font-size: 10px;
+    width: 100px;
+    padding: 10px;
+  }
+  .btnGetSart {
+    width: 40%;
+    border-radius: 10px;
+  }
+  .handImg {
+    width: 350px;
+    margin-top: 100px;
+  }
+}
+
+.Card {
+ height: 700px;
+ border-radius: 20px;
+}
+/* @media screen and (min-width:375px) and (max-width:667px) {
+  
+} */
+
+@media screen and (min-width:414px) and (max-width:736px) {
+  .bodyText {
+    margin-left: 15%;
+  }
+}
+.boxLocation {
+  margin-left: 30%;
+}
+@media screen and (min-width:1024px) {
+ 
+  .bodyText {
+    margin-left: 13%;
+  }
+  /* button get start  */
+
+.btnGetSart {
+  width: 45%;
+  border-radius: 10px;
+}
+.btnSub {
+  width: 150px;
+  height: 50px;
+}
+}
+
+@media screen and (width:280px) {
+  
+  .btnSub {
+    margin-left:-63px; 
+  } 
+  .handImg {
+    width: 300px;
+  }
+  /* .footerColor {
+    width: 20rem;
+  } */
+} 
+
+@media screen and (min-width:320px) and (max-width:568px) {
+  
+  .btnSub {
+    margin-left: -40px;
+    width: 100%;
+
+  }
+  .contentSub {
+    margin-left: -95px;
+  }
+  
+  .handImg {
+    width: 290px;
+  }
+  .btnGetSart {
+    width: 100%;
+  }
+  .content6 {
+    text-align: center;
+  }
+  .lengIconWithText {
+    margin-left: 90px;
+  }
+  
+}
+
+/* location of icon  */
+
+.personIcon, .serverIcon, .locationIcon{
+  margin-left: 12px;
+ }
+
+ /* Round Background of Icon  */
+ .Icon {
+   font-size: 50px;
+   width: 50px;
+   height: 50px;
+   background-color: rgb(255, 227, 227);
+   
+ 
+ }
+
+ /* card subscribe  */
+.content6 {
+  margin-top: -160px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width:540px) and (max-width:720px) {
+  .lengIconWithText {
+    margin-left: 100px;
+  }
+  .boxLocation {
+    margin-left: 35%;
+  }
+  .content6 {
+    text-align: center;
+  }
+  .btnSub {
+    width: 40%;
+  }
+}
+
+.boxLocation {
+  width: 120px;
+}
+.btnSelect {
+  width: 160px;
+}
