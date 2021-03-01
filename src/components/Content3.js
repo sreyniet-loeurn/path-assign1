@@ -1,5 +1,4 @@
 import React from "react";
-import secondImg from "../image/secondImg.png";
 import { Container, Row, Col } from "react-bootstrap";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
@@ -8,7 +7,7 @@ function Content3() {
     <Container>
       <Row>
         <Col xs={12} lg={6} sm={12} md={6} xl={6}>
-          <img src={secondImg} alt="" className="handImg" />
+          <img src="image/secondImg.png" alt="" className="handImg" />
         </Col>
         <Col className="mt-5" lg={6} xs={12} sm={12} md={6} xl={6}>
           <h2>

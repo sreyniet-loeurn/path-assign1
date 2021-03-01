@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Content6 from "./Content6";
-import footerlogo from "../image/footerlogo.PNG";
 function Footer() {
   return (
     <div className="footerColor" style={{ position: "relative" }}>
@@ -10,7 +9,7 @@ function Footer() {
         <Row>
           <Col xs={6} sm={6} md={3} lg={3}>
             <div className="row">
-              <img src={footerlogo} alt="" />
+              <img src="image/footerlogo.PNG" alt="" />
             </div>
             <p>
               <br />
@@ -23,7 +22,7 @@ function Footer() {
               <div className="roundShape shadow"></div>
               <div className="roundShape shadow"></div>
             </div>
-            <p className="mt-3">@2020LaslesVPN</p>
+            <p className="mt-3">&copy;2020LaslesVPN</p>
           </Col>
           <Col xs={6} lg={3} sm={6} md={3}>
             <h4>Product</h4>

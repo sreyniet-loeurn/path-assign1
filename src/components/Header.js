@@ -1,17 +1,11 @@
 import React from "react";
-import biglogo from "../image/biglogo.PNG";
-import {
-  Container,
-  Nav,
-  Navbar,
-  
-} from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 function Header() {
   return (
     <Container>
       <Navbar collapseOnSelect expand="lg">
         <Navbar.Brand href="#home">
-          <img src={biglogo} alt="logo" />
+          <img src="image/biglogo.PNG" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

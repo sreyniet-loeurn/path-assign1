@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import support from "../image/support.PNG";
 function Content5() {
   return (
     <Container className="text-center mt-5 content5">
@@ -15,7 +14,7 @@ function Content5() {
       </p>
       <div>
         <img
-          src={support}
+          src="image/support.PNG"
           alt=""
           className="mt-5 text-center netImg"
           width="100%"

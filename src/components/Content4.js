@@ -1,5 +1,4 @@
 import React from "react";
-import img3 from "../image/img3.png";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import DoneIcon from "@material-ui/icons/Done";
 import Content5 from "./Content5";
@@ -7,7 +6,6 @@ import Content5 from "./Content5";
 export const Content4 = () => {
   return (
     <Container className="mt-2">
-     
       <h2 className="text-center">Choose Your Plan</h2>
       <p className="text-center">
         Let's choose the package that is best for you and explore it happily and
@@ -18,7 +16,7 @@ export const Content4 = () => {
       <Row>
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4">
           <Card className="Card">
-            <Card.Img src={img3} className="boxLocation" />
+            <Card.Img src="image/img3.png" className="boxLocation" />
             <Card.Body>
               <Card.Title className="text-center">Free Plan</Card.Title>
               <Card.Text className="ml-5 ">
@@ -48,7 +46,7 @@ export const Content4 = () => {
 
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4">
           <Card className="Card">
-            <Card.Img src={img3} className="boxLocation" />
+            <Card.Img src="image/img3.png" className="boxLocation" />
             <Card.Body>
               <Card.Title className="text-center">Standard Plan</Card.Title>
               <Card.Text className="ml-5 bodyText">
@@ -81,7 +79,7 @@ export const Content4 = () => {
 
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4 ">
           <Card className="border border-danger Card">
-            <Card.Img src={img3} className="boxLocation" />
+            <Card.Img src="image/img3.png" className="boxLocation" />
             <Card.Body>
               <Card.Title className="text-center">Premium Plan</Card.Title>
               <Card.Text className="ml-5 bodyText">
@@ -114,7 +112,6 @@ export const Content4 = () => {
           </Card>
         </Col>
       </Row>
-      
 
       <Content5 />
     </Container>
