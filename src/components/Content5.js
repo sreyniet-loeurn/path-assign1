@@ -7,7 +7,6 @@ function Content5() {
       <h3>
         Huge Global Network
         <br />
-        <br />
         of Fast VPN
       </h3>
       <br></br>
@@ -22,9 +21,6 @@ function Content5() {
           width="100%"
         />
       </div>
-      <br />
-      <br />
-      <br />
     </Container>
   );
 }

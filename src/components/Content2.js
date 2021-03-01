@@ -49,8 +49,6 @@ function Content2() {
           </div>
         </Col>
       </Row>
-      <br />
-      <br />
     </Container>
   );
 }

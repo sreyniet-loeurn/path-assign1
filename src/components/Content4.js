@@ -7,8 +7,7 @@ import Content5 from "./Content5";
 export const Content4 = () => {
   return (
     <Container className="mt-2">
-      <br />
-      <br />
+     
       <h2 className="text-center">Choose Your Plan</h2>
       <p className="text-center">
         Let's choose the package that is best for you and explore it happily and
@@ -115,9 +114,7 @@ export const Content4 = () => {
           </Card>
         </Col>
       </Row>
-      <br />
-      <br />
-      <br />
+      
 
       <Content5 />
     </Container>

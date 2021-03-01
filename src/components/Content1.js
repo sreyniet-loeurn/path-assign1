@@ -9,18 +9,14 @@ function Content1() {
     <div>
       <Container className="">
         <Row className="mt-5 mb-5">
-          <br />
-          <br />
           <Col xs={12} lg={6}>
             <h3>
               Want anything to be <br></br>
               easy with LaslesVPN.
             </h3>
-            <br></br>
-            <p>
+            <p className ="mt-3">
               Provide a network for all your needs with ease and fun using{" "}
               <strong>LaslesVPN</strong>
-              <br />
               discover intersting features from us.
             </p>
 
@@ -34,8 +30,7 @@ function Content1() {
           <Col xs={12} lg={6} className="mt-5">
             <img src={vpn} alt="vpn" className="img1" width="100%" />
           </Col>
-          <br />
-          <br />
+         
           <Content2 className="mt-5" />
           <Content3 className="mt-5" />
         </Row>
