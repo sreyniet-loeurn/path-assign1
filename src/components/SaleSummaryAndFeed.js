@@ -1,4 +1,5 @@
 import React from 'react'
+// import '../Combine.scss'
 import { Container,Row,Col } from 'react-bootstrap'
 import FiberManualRecordRoundedIcon from '@material-ui/icons/FiberManualRecordRounded';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
@@ -7,7 +8,9 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 function SaleSummaryAndFeed() {
     return (
+        
         <Container fluid ={true}>
+            
         <Row>
             <Col md ={2}></Col>
         <Col md ={6}>
@@ -29,7 +32,9 @@ function SaleSummaryAndFeed() {
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="campaign ct-charts"></div>
+                            <div class="campaign ct-charts">
+                                <img src ="imgAdmin/chartis.PNG" width ="100%" height ="229" ></img>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,19 +48,19 @@ function SaleSummaryAndFeed() {
                         <ul class="list-style-none feed-body m-0 p-b-20">
                             <li class="feed-item">
                                 <div class="feed-icon bg-primary"><NotificationsNoneIcon /></div> You have 4
-                                pending tasks. <span class="ms-auto font-12 text-muted">Just Now</span>
+                                pending tasks. <span class="ml-auto font-12 text-muted">Just Now</span>
                             </li>
                             <li class="feed-item">
                                 <div class="feed-icon bg-success"><StorageIcon /></div> Server #1
-                                overloaded.<span class="ms-auto font-12 text-muted">2 Hours ago</span>
+                                overloaded.<span class="ml-auto font-12 text-muted">2 Hours ago</span>
                             </li>
                             <li class="feed-item">
                                 <div class="feed-icon bg-warning"><ShoppingCartIcon /></div> New
-                                order received.<span class="ms-auto font-12 text-muted">31 May</span>
+                                order received.<span class="ml-auto font-12 text-muted">31 May</span>
                             </li>
                             <li class="feed-item">
                                 <div class="feed-icon bg-danger"><PersonOutlineIcon /></div> New user
-                                registered.<span class="ms-auto font-12 text-muted">30 May</span>
+                                registered.<span class="ml-auto font-12 text-muted">30 May</span>
                             </li>
                         </ul>
                     </div>

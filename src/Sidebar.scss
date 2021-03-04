@@ -11,14 +11,14 @@ Main sidebar
 
 .left-sidebar {
     position: absolute;
-    width: 16%;
+    width: $sidebar-width-full;
     height: 100%;
     top: 0px;
     
     z-index: 10;
     padding-top: 64px;
-    background: white;
-    // box-shadow: $shadow;
+    background: $sidebar;
+    box-shadow: $shadow;
 }
 
 /*******************
@@ -28,16 +28,14 @@ sidebar navigation
     height: calc(100% - 20px);
     position: relative;
 }
-//upgradeToPro 
-.upgradeToPro {
-    width: 65%;
-}
+
+
 .sidebar-nav {
     ul {
        .sidebar-item {
-        //    width: $sidebar-width-full;
+           width: $sidebar-width-full;
            .sidebar-link {
-                // color: $sidebar-text;
+                color: $dark;
                 padding:$sidebar-link-padding;
                 display: flex;
                 white-space: nowrap; 
@@ -49,7 +47,7 @@ sidebar navigation
                     width: 35px;
                     line-height: 25px;
                     font-size: $sidebar-icon-size;
-                    // color: $sidebar-icons;
+                    color: $sidebar-icons;
                     display: inline-block;
                     text-align: center;
                 }
@@ -89,12 +87,14 @@ sidebar navigation
             align-items: center;
             line-height: 30px;
             margin-top: 10px;
-            // color: $sidebar-text;
+            color: $sidebar-text;
             opacity: 0.3;
             text-transform: uppercase; i{line-height: 30px; margin:0 5px;}
         }
     }
-    
+    >#sidebarnav >.sidebar-item >.sidebar-link:hover{
+        /*background: rgba(0, 0, 0, 0.04);*/
+    }
 }
 /*******************
  common m-p removed
@@ -123,7 +123,7 @@ Down arrow
         height: 7px;
         border-width: 1px 0 0 1px;
         border-style: solid;
-        // border-color: $sidebar-text;
+        border-color: $sidebar-text;
         margin-left: 10px;
         -webkit-transform: rotate(135deg) translate(0, -50%);
         -ms-transform: rotate(135deg) translate(0, -50%);
@@ -162,13 +162,19 @@ User Profile
     padding: 15px;
     
     .user-content, .user-name, .user-email{
-        // color:$theme-light;
+        color:$theme-light;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-}   
+}
 .create-btn {
-    height: 40px;
-    // background: $dark;
+    // height: 40px;
+    width: 90%;
+    background: #4fc3f7;
+}
+
+.upgrade-btn {
+    // height: 40px;
+    width: 80%;
 }

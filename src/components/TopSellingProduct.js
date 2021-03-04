@@ -14,7 +14,7 @@ function TopSellingProduct() {
                                         <h4 class="card-title">Top Selling Products</h4>
                                         <h5 class="card-subtitle">Overview of Top Selling Items</h5>
                                     </div>
-                                    <div class="ms-auto">
+                                    <div class="ml-auto">
                                         <div class="dl">
                                             <select class="form-select shadow-none">
                                                 <option value="0" selected>Monthly</option>
@@ -44,10 +44,10 @@ function TopSellingProduct() {
                                             <td>
                                                 <div class="d-flex align-items-center">
                                                     <div class="m-r-10"><a
-                                                            class="btn btn-circle d-flex btn-info text-white">EA</a>
+                                                            class="btn btn-circle d-flex btn-info text-white ">EA</a>
                                                     </div>
                                                     <div class="">
-                                                        <h4 class="m-b-0 font-16">Elite Admin</h4>
+                                                        <h4 class="m-b-0 font-16 ml-2">Elite Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
@@ -69,7 +69,7 @@ function TopSellingProduct() {
                                                             class="btn btn-circle d-flex bg-warning text-white">MA</a>
                                                     </div>
                                                     <div class="">
-                                                        <h4 class="m-b-0 font-16">Monster Admin</h4>
+                                                        <h4 class="m-b-0 font-16 ml-2">Monster Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
@@ -91,7 +91,7 @@ function TopSellingProduct() {
                                                             class="btn btn-circle d-flex btn-success text-white">MP</a>
                                                     </div>
                                                     <div class="">
-                                                        <h4 class="m-b-0 font-16">Material Pro Admin</h4>
+                                                        <h4 class="m-b-0 font-16 ml-2">Material Pro Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
@@ -113,7 +113,7 @@ function TopSellingProduct() {
                                                             class="btn btn-circle d-flex text-white" style= {{backgroundColor:'purple'}}>AA</a>
                                                     </div>
                                                     <div class="">
-                                                        <h4 class="m-b-0 font-16">Ample Admin</h4>
+                                                        <h4 class="m-b-0 font-16 ">Ample Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
