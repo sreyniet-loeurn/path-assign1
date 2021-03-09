@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../Combine.scss'
+import '../Combine.scss'
 import { Container,Row,Col } from 'react-bootstrap'
 import FiberManualRecordRoundedIcon from '@material-ui/icons/FiberManualRecordRounded';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
@@ -21,7 +21,7 @@ function SaleSummaryAndFeed() {
                             <h4 class="card-title">Sales Summary</h4>
                             <h5 class="card-subtitle">Overview of Latest Month</h5>
                         </div>
-                        <div class="ms-auto d-flex no-block align-items-center">
+                        <div class="ml-auto d-flex no-block align-items-center">
                             <ul class="list-inline font-12 dl m-r-15 m-b-0">
                                 <li class="list-inline-item text-info"><FiberManualRecordRoundedIcon /> Iphone
                                 </li>

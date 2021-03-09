@@ -175,7 +175,8 @@ code {
 
 /* location of three box pictures  */
 .boxLocation {
-  width: 120px;
+  width: 10px;
+  
 }
 .btnSelect {
   width: 160px;

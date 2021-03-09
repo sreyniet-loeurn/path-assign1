@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Breadcrumb } from "react-bootstrap";
-import "../../src/page.css";
+import "../custom.css";
 function Dashboard() {
   return (
     <div className="d-flex ">

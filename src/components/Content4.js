@@ -16,7 +16,7 @@ export const Content4 = () => {
       <Row>
         <Col xs={12} sm={12} md={4} lg={4} className="mt-4">
           <Card className="Card">
-            <Card.Img src="image/img3.png" className="boxLocation" />
+            <Card.Img src="image/img3.png" className="boxLocation"/>
             <Card.Body>
               <Card.Title className="text-center">Free Plan</Card.Title>
               <Card.Text className="ml-5 ">

@@ -6,12 +6,13 @@ import FaceIcon from "@material-ui/icons/Face";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import ReportProblemIcon from "@material-ui/icons/ReportProblem";
 import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import SettingsIcon from '@material-ui/icons/Settings';
-import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import SettingsIcon from "@material-ui/icons/Settings";
+import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
+import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import { Dropdown } from "react-bootstrap";
-import '../Combine.scss'
+import { Link } from "react-router-dom";
+import "../Combine.scss";
 function Sidebar() {
   return (
     <aside class="left-sidebar" data-sidebarbg="skin6">
@@ -38,42 +39,54 @@ function Sidebar() {
                       <PersonOutlineIcon class="m-r-5 m-l-5" width="17" /> My
                       Profile
                     </Dropdown.Item>
-                    <Dropdown.Item  href="javascript:void(0)">
-                      <AccountBalanceWalletIcon  class="m-r-5 m-l-5" width="17" /> My Balance
+                    <Dropdown.Item href="javascript:void(0)">
+                      <AccountBalanceWalletIcon
+                        class="m-r-5 m-l-5"
+                        width="17"
+                      />{" "}
+                      My Balance
                     </Dropdown.Item>
-                    <Dropdown.Item  href="javascript:void(0)">
-                      <MailOutlineIcon  class="m-r-5 m-l-5" width="17" /> Inbox
+                    <Dropdown.Item href="javascript:void(0)">
+                      <MailOutlineIcon class="m-r-5 m-l-5" width="17" /> Inbox
                     </Dropdown.Item>
-                    <Dropdown.Item  href="javascript:void(0)">
-                      <SettingsIcon  class="m-r-5 m-l-5" width="17" /> Account Setting
+                    <Dropdown.Item href="javascript:void(0)">
+                      <SettingsIcon class="m-r-5 m-l-5" width="17" /> Account
+                      Setting
                     </Dropdown.Item>
-                    <Dropdown.Item  href="javascript:void(0)">
-                      <PowerSettingsNewIcon  class="m-r-5 m-l-5" width="17" /> Account Setting
+                    <Dropdown.Item href="javascript:void(0)">
+                      <PowerSettingsNewIcon class="m-r-5 m-l-5" width="17" />{" "}
+                      Account Setting
                     </Dropdown.Item>
-                   
-                  
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
             </li>
-            <li class="p-15 m-t-10">
+            <li class="text-center p-40 create-btn ml-3 mt-4 border border-0 text-white d-flex">
               <a
-                href="javascript:void(0)"
-                class="btn d-block create-btn text-white no-block d-flex align-items-center ml-2"
+                class="btn d-block text-white"
+
               >
-                <LocalHospitalIcon />{" "}
-                <span class="hide-menu m-l-5 text-center">Create New</span>{" "}
+                <LocalHospitalIcon />
+                Create New
               </a>
             </li>
+            {/* <li class="p-15 m-t-10">
+              hello
+              <a class="btn d-block create-btn text-white no-block d-flex align-items-center ml-2">
+                <LocalHospitalIcon />
+                Create New
+              </a>
+            </li> */}
             <li class="sidebar-item">
-              {" "}
               <a
                 class="sidebar-link waves-effect waves-dark sidebar-link"
                 href="index.html"
                 aria-expanded="false"
               >
-                <DashboardIcon className="text-dark" />
-                <span class="hide-menu ml-2">Dashboard</span>
+                <Link to="/admin" style={{ textDecoration: 'none' }}>
+                  <DashboardIcon className="text-dark" />
+                  <span class="hide-menu ml-2 text-dark">Dashboard</span>
+                </Link>
               </a>
             </li>
             <li class="sidebar-item">
@@ -83,8 +96,10 @@ function Sidebar() {
                 href="pages-profile.html"
                 aria-expanded="false"
               >
-                <PersonOutlineIcon className="text-secondary" />
-                <span class="hide-menu ml-2">Profile</span>
+                <Link to="/profile">
+                  <PersonOutlineIcon className="text-secondary" />
+                  <span class="hide-menu ml-2 text-dark">Profile</span>
+                </Link>
               </a>
             </li>
             <li class="sidebar-item">
@@ -94,8 +109,10 @@ function Sidebar() {
                 href="table-basic.html"
                 aria-expanded="false"
               >
-                <BorderAllIcon className="text-secondary" />
-                <span class="hide-menu ml-2">Table</span>
+                <Link to="/table">
+                  <BorderAllIcon className="text-secondary" />
+                  <span class="hide-menu ml-2 text-dark">Table</span>
+                </Link>
               </a>
             </li>
             <li class="sidebar-item">
@@ -116,8 +133,10 @@ function Sidebar() {
                 href="starter-kit.html"
                 aria-expanded="false"
               >
-                <InsertDriveFileIcon className="text-secondary" />
-                <span class="hide-menu ml-2">Blank</span>
+                <Link to="/blank">
+                  <InsertDriveFileIcon className="text-secondary" />
+                  <span class="hide-menu ml-2 text-dark">Blank</span>
+                </Link>
               </a>
             </li>
             <li class="sidebar-item">
@@ -127,15 +146,21 @@ function Sidebar() {
                 href="error-404.html"
                 aria-expanded="false"
               >
-                <ReportProblemIcon className="text-secondary" />
-                <span class="hide-menu ml-2">404</span>
+                <Link to="/error">
+                  <ReportProblemIcon className="text-secondary" />
+                  <span class="hide-menu ml-2 text-dark">404</span>
+                </Link>
               </a>
             </li>
-            <li class="text-center p-40 upgrade-btn ml-4 mt-5 border border-0">
-                            <a href="https://www.wrappixel.com/templates/xtremeadmin/"
-                                class="btn d-block btn-danger text-white" target="_blank">Upgrade to Pro</a>
-                        </li>
-            
+            <li class="text-center p-40 upgrade-btn ml-5 mt-5 border border-0">
+              <a
+                href="https://www.wrappixel.com/templates/xtremeadmin/"
+                class="btn d-block btn-danger text-white"
+                target="_blank"
+              >
+                Upgrade to Pro
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

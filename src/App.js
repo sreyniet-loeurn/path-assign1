@@ -10,11 +10,17 @@ import Dashboard from "./components/Dashboard";
 import SaleSummaryAndFeed from "./components/SaleSummaryAndFeed";
 import TopSellingProduct from "./components/TopSellingProduct";
 import RecentCommentAndTempGuide from "./components/RecentCommentAndTempGuide";
-import "./page.css";
+import "./custom.css";
+import Profile from "./components/Profile";
+import Table from "./components/Table";
+import Blank from "./components/Blank";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
     <Router>
+
+      {/* Landing page  */}
       <Route
         path="/"
         exact
@@ -27,8 +33,10 @@ function App() {
           </>
         )}
       ></Route>
+
+      {/* Admin page  */}
       <Route
-        path="/admin"
+        path="/admin" 
         render={() => (
           <>
             <Admin />
@@ -42,6 +50,35 @@ function App() {
           </>
         )}
       ></Route>
+
+    {/* Profile page  */}
+        <Route path ="/profile" render = {() => (
+          <div className ="page-wrapper">
+            <Profile />
+          </div>
+        )}></Route>
+
+      {/* Table page  */}
+        <Route path ="/table" exact render ={() => (
+          <div className ="page-wrapper">
+            <Table />
+          </div>
+        )}>
+        </Route>
+
+    {/* Blank page  */}
+    <Route path = "/blank" render ={() => (
+      <div className="page-wrapper">
+        <Blank />
+      </div>
+    )}>
+    </Route>
+
+  {/* Error 404  */}
+      <Route path ="/error" render ={() => (
+        <Error404 />
+      )}></Route>
+  
     </Router>
   );
 }
