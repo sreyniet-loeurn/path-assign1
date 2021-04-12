@@ -1,16 +1,17 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
-import '../Combine.scss'
 
 // import '../page.css'
 
 function TopSellingProduct() {
   return (
-    <div className="mt-3">
+    <div>
       <Container fluid={true}>
         <Row>
-          <Col lg={2}></Col>
-          <Col lg={10}>
+          <Col xl={2}  md ={1}></Col>
+          <Col xl={10} md ={11} sm ={12}>
+          <div className="chartAndFeed">
+
             <div class="card">
               <div class="card-body">
                 <div class="d-md-flex">
@@ -48,9 +49,9 @@ function TopSellingProduct() {
                   <tbody>
                     <tr>
                       <td>
-                        <div class="d-flex align-items-center">
-                          <div class="m-r-10">
-                            <a class="btn btn-cirle d-flex  btn-info text-white ">
+                        <div class="d-flex">
+                          <div>
+                            <a class="btn btn-circle d-flex  btn-info text-white">
                               EA
                             </a>
                           </div>
@@ -76,7 +77,7 @@ function TopSellingProduct() {
                       <td>
                         <div class="d-flex align-items-center">
                           <div class="m-r-10">
-                            <a class="btn btn-cirle d-flex bg-warning text-white">
+                            <a class="btn btn-circle d-flex bg-warning text-white">
                               MA
                             </a>
                           </div>
@@ -100,7 +101,7 @@ function TopSellingProduct() {
                       <td>
                         <div class="d-flex align-items-center">
                           <div className="m-r-10 ">
-                            <a class="btn btn-cirle d-flex btn-success text-white">
+                            <a class="btn btn-circle d-flex btn-success text-white">
                               MP
                             </a>
                           </div>
@@ -127,14 +128,14 @@ function TopSellingProduct() {
                         <div class="d-flex align-items-center">
                           <div class="m-r-10">
                             <a
-                              class="btn btn-cirle d-flex text-white"
+                              class="btn btn-circle d-flex text-white"
                               style={{ backgroundColor: "purple" }}
                             >
                               AA
                             </a>
                           </div>
                           <div class="">
-                            <h4 class="m-b-0 font-16 ">Ample Admin</h4>
+                            <h4 class="m-b-0 font-16 ml-2 ">Ample Admin</h4>
                           </div>
                         </div>
                       </td>
@@ -153,6 +154,7 @@ function TopSellingProduct() {
                 </table>
               </div>
             </div>
+          </div>
           </Col>
         </Row>
       </Container>

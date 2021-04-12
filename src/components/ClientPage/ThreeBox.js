@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import DoneIcon from "@material-ui/icons/Done";
-import Content5 from "./Content5";
+import Content5 from "./HugeGlobalNetwork";
 
-export const Content4 = () => {
+export const ThreeBox = () => {
   return (
     <Container className="mt-2">
       <h2 className="text-center">Choose Your Plan</h2>
@@ -118,4 +118,4 @@ export const Content4 = () => {
   );
 };
 
-export default Content4;
+export default ThreeBox;

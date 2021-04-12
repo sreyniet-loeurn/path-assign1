@@ -1,10 +1,10 @@
 //Buttons
 
 .btn-circle {
-    border-radius: 100%;
     width: 40px;
     height: 40px;
     padding: 10px;
+    border-radius: 100% !important;
     &.btn-sm {
         width: 35px;
         height: 35px;

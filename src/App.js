@@ -1,20 +1,22 @@
 import React from "react";
-import Header from "./components/Header";
-import Content4 from "./components/Content4";
-import Footer from "./components/Footer";
-import Content1 from "./components/Content1";
+// import Content4 from "./components/Content4";
+// import Footer from "./components/Footer";
+// import Content1 from "./components/Content1";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Admin from "./components/Admin";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
-import SaleSummaryAndFeed from "./components/SaleSummaryAndFeed";
-import TopSellingProduct from "./components/TopSellingProduct";
-import RecentCommentAndTempGuide from "./components/RecentCommentAndTempGuide";
-import "./custom.css";
-import Profile from "./components/Profile";
-import Table from "./components/Table";
-import Blank from "./components/Blank";
-import Error404 from "./components/Error404";
+import Dashboard from "./components/AdminPage/Dashboard";
+import TopSellingProduct from "./components/AdminPage/TopSellingProduct";
+import RecentCommentAndTempGuide from "./components/AdminPage/RecentCommentAndTempGuide";
+// import "./custom.css";
+import Profile from "./components/AdminPage/Profile";
+import Table from "./components/AdminPage/Table";
+import Blank from "./components/AdminPage/Blank";
+import Error404 from "./components/AdminPage/Error404";
+import NavbarClient from "./components/ClientPage/NavbarClient";
+import GetStart from "./components/ClientPage/GetStart";
+import ThreeBox from "./components/ClientPage/ThreeBox";
+import Footer from "./components/ClientPage/Footer";
+import NavbarAdmin from "./components/AdminPage/NavbarAdmin";
+import './AdminStyle/scss/Combine.scss'
 
 function App() {
   return (
@@ -26,24 +28,24 @@ function App() {
         exact
         render={() => (
           <>
-            <Header />
-            <Content1 />
-            <Content4 />
+            <NavbarClient />
+            <GetStart />
+            <ThreeBox />
             <Footer />
           </>
         )}
       ></Route>
 
+
+
       {/* Admin page  */}
       <Route
-        path="/admin" 
+        path="/admin"
         render={() => (
           <>
-            <Admin />
-            <Sidebar />
             <div className="page-wrapper">
+              <NavbarAdmin />
               <Dashboard />
-              <SaleSummaryAndFeed />
               <TopSellingProduct />
               <RecentCommentAndTempGuide />
             </div>
@@ -51,34 +53,34 @@ function App() {
         )}
       ></Route>
 
-    {/* Profile page  */}
-        <Route path ="/profile" render = {() => (
-          <div className ="page-wrapper">
-            <Profile />
-          </div>
-        )}></Route>
+      {/* Profile page  */}
+      <Route path="/profile" render={() => (
+        <div className="page-wrapper">
+          <Profile />
+        </div>
+      )}></Route>
 
       {/* Table page  */}
-        <Route path ="/table" exact render ={() => (
-          <div className ="page-wrapper">
-            <Table />
-          </div>
-        )}>
-        </Route>
+      <Route path="/table" exact render={() => (
+        <div className="page-wrapper">
+          <Table />
+        </div>
+      )}>
+      </Route>
 
-    {/* Blank page  */}
-    <Route path = "/blank" render ={() => (
-      <div className="page-wrapper">
-        <Blank />
-      </div>
-    )}>
-    </Route>
+      {/* Blank page  */}
+      <Route path="/blank" render={() => (
+        <div className="page-wrapper">
+          <Blank />
+        </div>
+      )}>
+      </Route>
 
-  {/* Error 404  */}
-      <Route path ="/error" render ={() => (
+      {/* Error 404  */}
+      <Route path="/error" render={() => (
         <Error404 />
       )}></Route>
-  
+
     </Router>
   );
 }

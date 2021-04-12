@@ -1,0 +1,406 @@
+
+@import './Combine.scss';
+.page-wrapper {
+  background-color: #e9ecef;
+  /* height: 100%; */
+}
+
+
+
+
+/* Breadcrumb button  */
+
+
+.error-box .error-title {
+  font-size: 210px;
+  font-weight: 900;
+  text-shadow: 4px 4px 0 #fff, 6px 6px 0 #343a40;
+  line-height: 210px;
+  margin-top: 80px;
+}
+.textDanger {
+  color: #f62d51!important;
+}
+.btnDanger {
+  background: #f62d51!important;
+}
+.btnCircle {
+  border-radius: 50%;
+}
+
+
+/* form search menu  */
+
+.form-search {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+
+}
+
+.form-search.active {
+  display: block;
+
+}
+
+
+
+.srh-btn {
+  position: absolute;
+  left: 97%;
+}
+
+.nav-menu {
+  /* width: 250px; */
+  /* height: 100vh; */
+  top: 0;
+  margin-left: -37px ;
+  transition: 350ms;
+}
+
+.nav-menu.active {
+  /* left: 100% !important; */
+  transition: 350ms;
+}
+
+
+/* iPad screen  */
+
+@media screen and (min-width:768px) and (max-width:1022px) {
+  // .Card-sale-sumary {
+  //   height: 353px;
+  // }
+  .btnUpgradebreadcrumb {
+    position: absolute;
+    width:150px;
+    left: -40px !important;
+  }
+  .textBread {
+    font-size: 15px;
+  }
+  .btnUpGradeSidebar{
+    display: none !important;
+  }
+  
+  .iconSidebar {
+    margin-left: 13px;
+  }
+  
+}
+
+/* iPad Pro screen  */
+
+@media screen and (width:1024px) {
+  
+  .btnUpGradeSidebar{
+    display: none !important;
+  }
+  
+  .iconSidebar {
+    margin-left: 13px;
+  }
+
+}
+
+
+
+@media screen and (min-width:1025px) and (max-width:1199px) {
+  // .Card-sale-sumary {
+  //   height: 335px;
+  // }
+  .btnUpgradebreadcrumb {
+    position: absolute;
+    width:150px;
+    left: -25px !important;
+  }
+  .chartAndFeed{
+    position: relative;
+    margin-left: 125px !important;
+  }
+  .iconSidebar {
+    margin-left: 13px;
+  }
+  .main-menu,nav.main-menu {
+    width:210px;
+    overflow:visible;
+    }
+  
+ .create-btn  {
+  width: 85% !important;
+} 
+.btnUpGradeSidebar {
+  width: 60% !important;
+  font-size: 10px;
+}
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1260px) {
+  // .Card-sale-sumary {
+  //   height: 350px;
+  // }
+  .chartAndFeed{
+    position: relative;
+    margin-left: 15px !important;
+  }
+  .iconSidebar {
+    margin-left: 13px;
+  }
+  .main-menu,nav.main-menu {
+    width:210px;
+    overflow:visible;
+    }
+  
+ .create-btn  {
+  width: 85% !important;
+} 
+.btnUpGradeSidebar {
+  width: 60% !important;
+  font-size: 10px;
+}
+
+}
+@media screen and (min-width:1261px) {
+  .iconSidebar {
+    margin-left: 13px;
+  }
+  .main-menu,nav.main-menu {
+    width:210px;
+    overflow:visible;
+    }
+  
+ .create-btn  {
+  width: 85% !important;
+} 
+.btnUpGradeSidebar {
+  width: 60% !important;
+  font-size: 10px;
+}
+
+}
+
+/* iPhone 5 */
+@media screen and (min-width:320px) and (max-width:390px){
+ 
+  .btnUpgradebreadcrumb {
+    position: absolute;
+    width:135px;
+    left: -15px !important;
+  }
+  .textBread {
+    font-size: 12px;
+  }
+  .upgradeToPro {
+    width: 90%;
+    font-size: 10px;
+    /* margin-left: 300px; */
+  }
+  .main-menu,nav.main-menu {
+    width:210px;
+    }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    height: 100% !important;
+}
+.nav-menu.active {
+    left: 1px;
+    transition: 350ms;
+}
+
+.btnUpGradeSidebar {
+  width: 60% !important;
+}
+}
+
+// after iphone 
+
+@media screen and (min-width:391px) and (max-width:575px){
+ 
+  .btnUpgradebreadcrumb {
+    position: absolute;
+    width:135px;
+    left: 50px !important;
+  }
+  .textBread {
+    font-size: 12px;
+  }
+  .upgradeToPro {
+    width: 90%;
+    font-size: 10px;
+    /* margin-left: 300px; */
+  }
+  .main-menu,nav.main-menu {
+    width:210px;
+    }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    height: 100% !important;
+}
+.nav-menu.active {
+    left: 1px;
+    transition: 350ms;
+}
+
+.btnUpGradeSidebar {
+  width: 60% !important;
+}
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+ 
+  .btnUpgradebreadcrumb {
+    position: absolute;
+    width:150px;
+    left: -70px !important;
+  }
+  .textBread {
+    font-size: 15px;
+  }
+  .upgradeToPro {
+    width: 90%;
+    font-size: 10px;
+    /* margin-left: 300px; */
+  }
+  .main-menu,nav.main-menu {
+    width:210px;
+    }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    height: 100% !important;
+}
+.nav-menu.active {
+    left: 1px;
+    transition: 350ms;
+}
+
+.btnUpGradeSidebar {
+  width: 60% !important;
+}
+}
+
+
+/* btn upggrade to pro sidebar  */
+.btnUpGradeSidebar {
+  width: 100%;
+  margin-left: -15px !important;
+}
+
+
+/* screen hide text of sidebar  */
+
+@media screen and (min-width:576px) and (max-width:1040px) {
+  // .Card-sale-sumary {
+  //   height: 370px !important;
+  // }
+  .sidebar-nav{
+    overflow: hidden;
+  }
+  .left-sidebar {
+margin-left: -3px !important;
+} 
+
+}
+
+
+// Hover sidebar 
+
+ 
+.main-menu:hover,nav.main-menu.expanded {
+width:210px;
+overflow:visible;
+
+
+}
+
+.main-menu {
+background: $sidebar;
+box-shadow: $shadow;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:170px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+// width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+

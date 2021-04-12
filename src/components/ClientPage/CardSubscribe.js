@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 
-function Content6() {
+function CardSubscribe() {
   return (
     <div className="shadow-lg p-5 bg-body content6">
       <Container>
@@ -28,4 +28,4 @@ function Content6() {
   );
 }
 
-export default Content6;
+export default CardSubscribe;

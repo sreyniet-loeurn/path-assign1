@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
-function Content3() {
+function ProvideManyFeature() {
   return (
     <Container>
       <Row>
@@ -43,4 +43,4 @@ function Content3() {
   );
 }
 
-export default Content3;
+export default ProvideManyFeature;

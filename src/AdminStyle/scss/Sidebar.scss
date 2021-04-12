@@ -17,8 +17,8 @@ Main sidebar
     
     z-index: 10;
     padding-top: 64px;
-    background: $sidebar;
-    box-shadow: $shadow;
+    // background: $sidebar;
+    // box-shadow: $shadow;
 }
 
 /*******************
@@ -92,9 +92,7 @@ sidebar navigation
             text-transform: uppercase; i{line-height: 30px; margin:0 5px;}
         }
     }
-    >#sidebarnav >.sidebar-item >.sidebar-link:hover{
-        /*background: rgba(0, 0, 0, 0.04);*/
-    }
+    
 }
 /*******************
  common m-p removed
@@ -178,3 +176,5 @@ User Profile
     // height: 40px;
     width: 74%;
 }
+
+

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-function Content5() {
+function HugeGlobalNetwork() {
   return (
     <Container className="text-center mt-5 content5">
       <h3>
@@ -24,4 +24,4 @@ function Content5() {
   );
 }
 
-export default Content5;
+export default HugeGlobalNetwork;

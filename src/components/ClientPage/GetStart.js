@@ -1,10 +1,9 @@
 import React from "react";
-// import vpn from "../../image/vpn.png";
-import Content2 from "./Content2";
-import Content3 from "./Content3";
 import { Container, Row, Col } from "react-bootstrap";
+import CardOfUserLocationAndServer from "./CardOfUserLocationAndServer";
+import ProvideManyFeature from "./ProvideManyFeature";
 
-function Content1() {
+function GetStart() {
   return (
     <div>
       <Container className="">
@@ -30,13 +29,13 @@ function Content1() {
           <Col xs={12} lg={6} className="mt-5">
             <img src="image/vpn.png" alt="vpn" className="img1" width="100%" />
           </Col>
-
-          <Content2 className="mt-5" />
-          <Content3 className="mt-5" />
+        <CardOfUserLocationAndServer className="mt-5" />
+        <ProvideManyFeature className="mt-5" />
+      
         </Row>
       </Container>
     </div>
   );
 }
 
-export default Content1;
+export default GetStart;

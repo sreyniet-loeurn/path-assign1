@@ -4,7 +4,7 @@ import RoomIcon from "@material-ui/icons/Room";
 import DnsIcon from "@material-ui/icons/Dns";
 import { Col, Container, Row } from "react-bootstrap";
 
-function Content2() {
+function CardOfUserLocationAndServer() {
   return (
     <Container className="shadow mt-5 bg-white rounded">
       <Row>
@@ -53,4 +53,4 @@ function Content2() {
   );
 }
 
-export default Content2;
+export default  CardOfUserLocationAndServer;

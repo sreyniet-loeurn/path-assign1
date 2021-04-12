@@ -1,11 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Content6 from "./Content6";
+import CardSubscribe from "./CardSubscribe";
 function Footer() {
   return (
     <div className="footerColor" style={{ position: "relative" }}>
       <Container>
-        <Content6 style={{ position: "absolute" }} />
+        <CardSubscribe style={{ position: "absolute" }} />
         <Row>
           <Col xs={6} sm={6} md={3} lg={3}>
             <div className="row">

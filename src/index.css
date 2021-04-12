@@ -49,11 +49,10 @@ code {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
    /* button subscribe  */
-  .btnSub {
-    margin-left: 25px;
-    font-size: 10px;
-    width: 90px;
-    padding: 10px;
+   .btnSub {
+     width: 140px;
+    /* margin-left: 25px;
+    padding: 10px; */
   }
 
   .btnGetSart {
@@ -83,12 +82,15 @@ code {
 }
 .boxLocation {
   margin-left: 30%;
+  width: 10px;
 }
 
 
 /* iPad Pro  */
 @media screen and (min-width:1024px) {
- 
+ .boxLocation{
+   width: 40%;
+ }
   .bodyText {
     margin-left: 13%;
   }
@@ -158,26 +160,36 @@ code {
 
 
 /* Surface Duo screen  */
-@media screen and (min-width:540px) and (max-width:720px) {
-  .lengIconWithText {
+@media screen and (min-width:540px) and (max-width:769px) {
+   .lengIconWithText {
     margin-left: 100px;
   }
   .boxLocation {
-    margin-left: 35%;
+    margin-top: 20px;
+    /* width: 0% !important; */
+    margin-left: 34%;
+
+  }
+  .bodyText {
+    margin-left: 25%;
   }
   .content6 {
     text-align: center;
   }
-  .btnSub {
-    width: 40%;
+  .contentSub {
+    margin-right: 70px;
   }
+ 
 }
 
 /* location of three box pictures  */
 .boxLocation {
-  width: 10px;
+  margin-top: 20px;
+  width: 40% !important;
   
 }
 .btnSelect {
   width: 160px;
 }
+
+
